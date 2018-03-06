@@ -2,7 +2,7 @@
 
 Udemy clone
 
-#Setup
+# Setup
 
 npm install
 npm run seed-db
