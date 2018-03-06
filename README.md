@@ -1,6 +1,10 @@
 # hakuza
+
 Udemy clone
 
-git checkout -b compare_courses
+#Setup
 
-git branch --set-upstream-to=origin/compare_courses compare_courses
+npm install
+npm run seed-db
+
+npm run server-dev
