@@ -16,7 +16,9 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "axios": "^0.18.0",
