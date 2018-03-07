@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CourseList from './components/courseList.jsx';
 import serverHelper from './serverHelper.js';
+import './styles.css';
 
 class App extends React.Component {
   constructor(props) {
