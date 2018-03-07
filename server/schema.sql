@@ -1,7 +1,6 @@
 CREATE DATABASE compare;
 USE compare;
 
-
 DROP TABLE IF EXISTS similar_courses;
 CREATE TABLE similar_courses (
   course1_id INTEGER NOT NULL,
@@ -18,7 +17,6 @@ CREATE TABLE courses (
   price VARCHAR(10) NOT NULL,
   thumbnail_url VARCHAR(255) NOT NULL,
   updated_at VARCHAR(255) NOT NULL,
-  description TEXT,
   PRIMARY KEY (id)
 );
 
