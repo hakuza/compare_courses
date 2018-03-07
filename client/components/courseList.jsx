@@ -9,7 +9,7 @@ export default class CourseList extends React.Component {
       height: 515,
       expanded: false,
       'view-more-styles': {
-        top: 515,
+        bottom: 600,
       },
     };
     this.accordian = this.accordian.bind(this);
@@ -20,10 +20,10 @@ export default class CourseList extends React.Component {
     let expanded = !this.state.expanded;
     // let height = expanded ? 1115 : 515;
     this.setState({
-      height: expanded ? 1115 : 515,
+      height: expanded ? 1135 : 515,
       expanded: expanded,
       'view-more-styles': {
-        top: expanded ? 1135 : 515,
+        bottom: expanded ? -20 : 600,
       },
     });
   }
@@ -49,14 +49,14 @@ export default class CourseList extends React.Component {
                 }}
               />
             ))}
-          </div>
-          <div
-            className="view-more-container"
-            style={this.state['view-more-styles']}
-          >
-            <button className="view-more-btn" onClick={this.accordian}>
-              {this.state.expanded ? '- View Less' : '+ View More'}
-            </button>
+            <div
+              className="view-more-container"
+              style={this.state['view-more-styles']}
+            >
+              <button className="view-more-btn" onClick={this.accordian}>
+                {this.state.expanded ? '- View Less' : '+ View More'}
+              </button>
+            </div>
           </div>
         </Collapse>
       </div>

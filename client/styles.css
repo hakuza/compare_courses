@@ -9,21 +9,31 @@
   border-style: solid;
 } */
 
+.container {
+  padding-bottom: 30px;
+}
+
 .compare-header {
   font-size: 22px;
   font-weight: 600;
   margin: 0 0 15px;
 }
 
+.course-list {
+  position: relative;
+  margin: 0px 0px 30px 10px;
+}
+
 .view-more-container {
-  padding-top: 30px;
   position: absolute;
+  padding-top: 30px;
   width: 100%;
   background: linear-gradient(
     hsla(0, 0%, 100%, 0),
     hsla(0, 0%, 100%, 0.95),
     #fff
   );
+  margin-left: -15px;
 }
 
 .view-more-btn {
@@ -40,31 +50,31 @@
   color: #003845;
 }
 
-.course-list > div:last-child {
+.course-list > .course-container:last-child {
   margin-bottom: 10px;
 }
 
-.course-list > div {
+.course-list > .course-container {
   border-bottom: solid 15px transparent;
   border-top: solid 15px transparent;
   box-shadow: 0 -2px 0 -1px #d3d3d3;
   width: 750px;
 }
 
-.course-list > div:nth-child(2) {
+.course-list > .course-container:nth-child(2) {
   box-shadow: 0 -4px 0 -1px #d3d3d3;
 }
 
-.course-list > div:hover {
+.course-list > .course-container:hover {
   cursor: pointer;
   background-color: #e8e9eb;
 }
 
-.course-list > div:not(:first-child) > .curr-course {
+.course-list > .course-container:not(:first-child) > .curr-course {
   display: none;
 }
 
-.course-list > div:first-child:hover {
+.course-list > .course-container:first-child:hover {
   cursor: default;
   background-color: transparent;
 }
