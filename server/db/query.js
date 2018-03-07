@@ -29,8 +29,7 @@ exports.insertCourse = item =>
       num_subs, 
       price, 
       thumbnail_url,
-      updated_at,
-      description
+      updated_at
     )
     VALUES (
       "${_.escape(item.title)}",
@@ -38,8 +37,7 @@ exports.insertCourse = item =>
       "${item.num_subscribers}",
       "${item.price}",
       "${item.image_125_H}",
-      "${item.created}",
-      "${_.escape(item.description)}"
+      "${item.created}"
     )
   `;
 

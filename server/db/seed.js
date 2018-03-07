@@ -11,7 +11,7 @@ const queryCreator = require('./query.js');
 //   database: 'compare'
 // });
 
-// const url = 'https://www.udemy.com/api-2.0/courses/?page_size=200&search=programming&ordering=most-reviewed&fields[course]=title,avg_rating,num_subscribers,created,price,num_reviews,description,image_125_H,url';
+// const url = 'https://www.udemy.com/api-2.0/courses/?page_size=200&search=programming&ordering=most-reviewed&fields[course]=title,avg_rating,num_subscribers,created,price,num_reviews,image_125_H,url';
 const url = 'https://www.udemy.com/api-2.0/courses/';
 
 let options = {
@@ -26,7 +26,7 @@ let options = {
     search: 'programming',
     ordering: 'most-reviewed',
     'fields[course]':
-      'title,avg_rating,num_subscribers,created,price,num_reviews,description,image_125_H,url',
+      'title,avg_rating,num_subscribers,created,price,num_reviews,image_125_H,url',
   },
 };
 
