@@ -1,3 +1,4 @@
+CREATE DATABASE compare;
 USE compare;
 
 
