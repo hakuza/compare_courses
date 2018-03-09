@@ -25,7 +25,7 @@ module.exports = {
         })
         .catch(err => {
           res.writeHead(404);
-          res.end(err);
+          res.end(JSON.stringify(err));
         });
     },
   },
