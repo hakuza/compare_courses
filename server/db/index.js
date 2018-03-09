@@ -1,6 +1,7 @@
 var mysql = require('mysql');
 
 const connection = mysql.createConnection({
+  host: 'hakuza-compare-course.c5vaqsv91pnb.us-west-1.rds.amazonaws.com',
   user: 'student',
   password: 'student',
   database: 'compare',
