@@ -24,7 +24,6 @@ module.exports = {
           res.end(JSON.stringify(courses));
         })
         .catch(err => {
-          console.log(err);
           res.writeHead(404);
           res.end(JSON.stringify(err));
         });
