@@ -11,6 +11,8 @@ app.use(function(req, res, next) {
 
 app.use(parser.urlencoded({ extended: false }));
 
+app.use(express.static('./public'));
+
 app.use('/api', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
@@ -20,8 +22,6 @@ app.use('/api', function(req, res, next) {
   next();
 });
 app.use('/api', router);
-
-app.use(express.static(__dirname + '/../public'));
 
 const port = 3004;
 
