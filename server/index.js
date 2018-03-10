@@ -24,5 +24,5 @@ app.use('/compare', router);
 
 const port = 3004;
 app.listen(port, function() {
-  console.log(`Listening on port ${port}`);
+  console.log(`Compare server listening on port ${port}`);
 });
