@@ -14,9 +14,9 @@ class Compare extends React.Component {
     };
   }
 
-  getCourses() {
+  getCourses(id) {
     // console.log(id);
-    let id = window.location.search || '?id=1';
+    let id = id ? '?id=' + id : window.location.search;
     serverHelper
       .get(id)
       .then(response => {
@@ -33,7 +33,7 @@ class Compare extends React.Component {
   }
 
   componentWillMount() {
-    this.getCourses();
+    this.getCourses(1);
   }
 
   render() {
