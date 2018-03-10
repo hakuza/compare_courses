@@ -16,9 +16,9 @@ class Compare extends React.Component {
 
   getCourses(id) {
     // console.log(id);
-    let id = id ? '?id=' + id : window.location.search;
+    let courseID = id ? '?id=' + id : window.location.search;
     serverHelper
-      .get(id)
+      .get(courseID)
       .then(response => {
         // console.log(response.data);
         let similarCourses = response.data.map(obj => obj[0]);
