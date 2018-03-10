@@ -104,7 +104,7 @@
   justify-content: space-between;
 }
 
-.title {
+.title-container {
   height: 100%;
   margin-left: 15px;
   width: 45%;
@@ -154,6 +154,6 @@
   margin-right: 3px;
 }
 
-.price {
+.course-price {
   width: 60px;
 }

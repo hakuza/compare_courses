@@ -8,7 +8,7 @@ function Course({ course, onclick }) {
       <div className="course">
         <img className="thumbnail" src={course.thumbnail_url} />
         <div className="course-info">
-          <div className="title">
+          <div className="title-container">
             <div className="course-title">{_.unescape(course.title)}</div>
             <div className="updated-at">
               {'Updated ' +
@@ -26,7 +26,7 @@ function Course({ course, onclick }) {
               <i className="far fa-user" />
               {course.num_subs}
             </div>
-            <div className="price">{course.price}</div>
+            <div className="course-price">{course.price}</div>
           </div>
         </div>
       </div>
